@@ -3,4 +3,4 @@ project(chessai_cpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(chessai_cpp main.cpp)
+add_executable(chessai_cpp main.cpp util/Color.h util/Piece.cpp util/Piece.h util/PieceType.h util/Square.cpp util/Square.h util/SquareType.h util/static_block.h)
