@@ -5,7 +5,6 @@
 #ifndef CHESSAI_CPP_SQUARE_H
 #define CHESSAI_CPP_SQUARE_H
 
-
 #include <map>
 #include "SquareType.h"
 
@@ -13,10 +12,11 @@ class Square {
 public:
     Square();
     SquareType type;
+
 private:
-    const static std::map<int, Square> lookup;
+    static std::map<int, Square> lookup;
+    static void init();
     int value;
 };
-
 
 #endif //CHESSAI_CPP_SQUARE_H
